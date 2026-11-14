@@ -34,3 +34,6 @@ dist-ssr
 original-uploads/
 
 package-lock.json
+node_modules
+.output
+.wrangler

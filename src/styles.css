@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
@@ -39,32 +39,33 @@
 
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.991 0.004 350);
-  --ivory: oklch(0.991 0.004 350);
-  --surface: oklch(0.976 0.015 350);
-  --foreground: oklch(0.29 0.025 350);    /* #1E293B */
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.29 0.025 350);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.29 0.025 350);
-  --primary: oklch(0.54 0.205 5);
-  --primary-deep: oklch(0.42 0.17 5);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.955 0.027 350);
-  --secondary-foreground: oklch(0.42 0.17 5);
-  --muted: oklch(0.975 0.012 350);
-  --muted-foreground: oklch(0.46 0.025 350);
-  --accent: oklch(0.85 0.19 85);
-  --accent-foreground: oklch(0.29 0.025 350);
-  --gold: oklch(0.5 0.145 70);
-  --gold-soft: oklch(0.85 0.19 85);
+  --background: #F8FAFC;
+  --ivory: #F8FAFC;
+  --surface: #FFFFFF;
+  --foreground: #334155;    /* Charcoal Slate */
+  --card: #FFFFFF;
+  --card-foreground: #334155;
+  --popover: #FFFFFF;
+  --popover-foreground: #334155;
+  --primary: #1E3A5F;       /* Deep Navy */
+  --primary-deep: #15283F;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EEF2F7;
+  --secondary-foreground: #1E3A5F;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B; /* Muted Gray */
+  --accent: #FBE6C6;
+  --accent-foreground: #1E3A5F;
+  --gold: #D97706;          /* Muted Gold — primary CTA accent */
+  --gold-soft: #FBE6C6;
+  --forest: #1E5631;        /* Ledger Forest Green — secondary accent */
   --destructive: oklch(0.55 0.2 27);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.90 0.025 350);
-  --input: oklch(0.90 0.025 350);
-  --ring: oklch(0.54 0.205 5);
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #1E3A5F;
   --gradient-wine: linear-gradient(135deg, var(--primary-deep), var(--primary));
-  --shadow-soft: 0 24px 70px rgba(66,27,43,.10);
+  --shadow-soft: 0 24px 70px rgba(30,58,95,.10);
 }
 
 @layer base {
@@ -123,43 +124,43 @@
 
 
 :root {
-  --mockup-tone-1: #FFFCF8;
-  --mockup-tone-2: rgba(91,35,58,.14);
-  --mockup-tone-3: rgba(91,35,58,.28);
-  --mockup-tone-4: rgba(255,252,248,.86);
+  --mockup-tone-1: #FFFFFF;
+  --mockup-tone-2: rgba(30,58,95,.14);
+  --mockup-tone-3: rgba(30,58,95,.28);
+  --mockup-tone-4: rgba(255,255,255,.86);
   --mockup-tone-5: rgba(250,245,239,.95);
-  --mockup-tone-6: rgba(230,218,209,.8);
-  --mockup-tone-7: rgba(215,183,122,.55);
-  --mockup-tone-8: #5A4542;
-  --mockup-tone-9: rgba(215,183,122,.17);
-  --mockup-tone-10: #FAF5EF;
-  --mockup-tone-11: #F2E8E5;
-  --mockup-tone-12: rgba(91,35,58,.035);
-  --mockup-tone-13: rgba(215,183,122,.75);
-  --mockup-tone-14: oklch(0.96 0.025 350);
-  --mockup-tone-15: oklch(0.89 0.06 350);
-  --mockup-tone-16: oklch(0.78 0.155 5);
-  --mockup-tone-17: rgba(255,252,248,.6);
-  --mockup-tone-18: rgba(255,252,248,.33);
-  --mockup-tone-19: rgba(255,252,248,.34);
-  --mockup-tone-20: rgba(91,35,58,.12);
-  --mockup-tone-21: rgba(255,252,248,.48);
-  --mockup-tone-22: rgba(255,252,248,.19);
-  --mockup-tone-23: rgba(255,252,248,.82);
+  --mockup-tone-6: rgba(226,232,240,.8);
+  --mockup-tone-7: rgba(217,119,6,.55);
+  --mockup-tone-8: #334155;
+  --mockup-tone-9: rgba(217,119,6,.17);
+  --mockup-tone-10: #F8FAFC;
+  --mockup-tone-11: #EEF2F7;
+  --mockup-tone-12: rgba(30,58,95,.035);
+  --mockup-tone-13: rgba(217,119,6,.75);
+  --mockup-tone-14: oklch(0.96 0.015 250);
+  --mockup-tone-15: oklch(0.89 0.035 250);
+  --mockup-tone-16: oklch(0.76 0.07 250);
+  --mockup-tone-17: rgba(255,255,255,.6);
+  --mockup-tone-18: rgba(255,255,255,.33);
+  --mockup-tone-19: rgba(255,255,255,.34);
+  --mockup-tone-20: rgba(30,58,95,.12);
+  --mockup-tone-21: rgba(255,255,255,.48);
+  --mockup-tone-22: rgba(255,255,255,.19);
+  --mockup-tone-23: rgba(255,255,255,.82);
   --mockup-tone-24: var(--surface);
-  --mockup-tone-25: rgba(230,218,209,.9);
-  --mockup-tone-26: rgba(215,183,122,.8);
-  --mockup-tone-27: rgba(215,183,122,.45);
-  --mockup-tone-28: rgba(255,252,248,.08);
-  --mockup-tone-29: oklch(0.93 0.09 90);
-  --mockup-tone-30: rgba(255,252,248,.8);
-  --mockup-tone-31: rgba(255,252,248,.04);
-  --mockup-tone-32: rgba(255,252,248,.75);
-  --mockup-tone-33: #E5C990;
+  --mockup-tone-25: rgba(226,232,240,.9);
+  --mockup-tone-26: rgba(217,119,6,.8);
+  --mockup-tone-27: rgba(217,119,6,.45);
+  --mockup-tone-28: rgba(255,255,255,.08);
+  --mockup-tone-29: oklch(0.963 0.05 90);
+  --mockup-tone-30: rgba(255,255,255,.8);
+  --mockup-tone-31: rgba(255,255,255,.04);
+  --mockup-tone-32: rgba(255,255,255,.75);
+  --mockup-tone-33: #E8A64A;
   --mockup-tone-34: var(--secondary);
   --mockup-tone-35: var(--muted-foreground);
-  --mockup-tone-36: rgba(66,27,43,.08);
-  --mockup-tone-37: rgba(255,252,248,.18);
+  --mockup-tone-36: rgba(30,58,95,.08);
+  --mockup-tone-37: rgba(255,255,255,.18);
 }
 @scope (.portfolio-mockup) {
 
@@ -258,6 +259,27 @@
     .expert-card:after { content: ''; position: absolute; width: 75px; height: 75px; right: -28px; bottom: -32px; border: 1px solid var(--mockup-tone-27); transform: rotate(45deg); }
     .systems { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
     .system-pill { padding: 10px 15px; background: var(--ivory); border: 1px solid var(--border); color: var(--primary); font-size: 11px; font-weight: 700; }
+    .creds-bar { background: var(--secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .creds-bar-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+    .creds-bar-label { font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-foreground); white-space: nowrap; }
+    .creds-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .cred-pill { padding: 8px 14px; background: var(--card); border: 1px solid var(--border); color: var(--primary); font-size: 11px; font-weight: 700; }
+    .cred-pill.is-gold { border-color: var(--gold); color: var(--gold); }
+    .methodology-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; counter-reset: step; }
+    .method-step { position: relative; padding: 26px 22px 22px; background: var(--card); border: 1px solid var(--border); border-top: 3px solid var(--forest); }
+    .method-step-no { display: block; color: var(--gold); font: 500 34px var(--font-display); margin-bottom: 10px; }
+    .method-step h3 { font-size: 17px; margin: 0 0 8px; color: var(--primary); }
+    .method-step p { font-size: 12px; line-height: 1.7; margin: 0; }
+    .contact-form { display: grid; gap: 14px; margin-top: 22px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-field { display: flex; flex-direction: column; gap: 6px; }
+    .form-field label { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-foreground); }
+    .form-field input, .form-field select, .form-field textarea { font: inherit; font-size: 13px; padding: 11px 13px; border: 1px solid var(--border); background: var(--background); color: var(--foreground); border-radius: 2px; }
+    .form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: 2px solid var(--ring); outline-offset: 1px; }
+    .form-field textarea { resize: vertical; min-height: 96px; }
+    .form-confidentiality { font-size: 11px; color: var(--muted-foreground); }
+    @media (max-width: 860px) { .methodology-steps { grid-template-columns: repeat(2,1fr); } .form-row { grid-template-columns: 1fr; } }
+    @media (max-width: 560px) { .methodology-steps { grid-template-columns: 1fr; } .creds-bar-inner { flex-direction: column; align-items: flex-start; } }
     .timeline { position: relative; margin-top: 8px; }
     .timeline:before { content: ''; position: absolute; top: 10px; bottom: 8px; left: 165px; width: 1px; background: var(--border); }
     .timeline-item { display: grid; grid-template-columns: 135px 1fr; gap: 62px; padding: 0 0 42px; position: relative; }
